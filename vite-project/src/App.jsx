@@ -1,53 +1,87 @@
+
+import Hero from './component/Hero';
+// using Function
+
+// const LoginStatusBtn=(status)=>{
+//   if(status){
+//     return <button>Logout Btn</button>
+//   }
+//   else{
+//     return <button>Login Btn</button>
+//   }
+// }
+
 const App = () => {
-// let marks=50;
 
-const city = ['Dhaka','London','Delhi','kolkata']
+  const status=true;
 
-  return (
-    // <div>
-    //   {(()=>{
+  // let isLoggedIn = true;
+
+// return(
+
+// <div>
+
+//   <h1>Login status</h1>
+//   {LoginStatusBtn(false)}
+// </div>
+
+// );
+
+// // using switch
+
+// switch (status) {
+//   case true:
+//     return <button>Logout</button>
+
+//   case false:
+//     return <button>Login</button>
+
+//   default:
+//     return null
+// }
+
+return(
+  // <div>
+  //   {/* Ternary operator */}
+  //   {
+  //     status?
+  //     <button>Logout Button</button>
+  //     :
+  //     <button>Login Button</button>
+  //   }
+  // </div>
+
+  // Logical And And
+  // <div>
+  //   <h1>Login status</h1>
+  //   {isLoggedIn && <button>Logout</button>}
+  // </div>
 
 
-    //     if(marks>=80 && marks<100){
-    //       return <h1>A+</h1>
-    //     }
+<div>
+<h1>Login Status</h1>
+  {(()=>{
 
-    //     else if(marks>=70 && marks<80){
-    //       return <h1>A</h1>
-    //     }
-      
-    //     else if(marks>=60 && marks<70){
-    //       return <h1>A-</h1>
-    //     }
 
-    //     else if(marks>=50 && marks<60){
-    //       return <h1>B</h1>
-    //     }
+    if(status==true)
+      return <button>Logout Button</button>
+    else{
+      return <button>Login Button</button>
+    }
 
-    //     else if(marks>=40 && marks<50){
-    //       return <h1>c</h1>
-    //     }
 
-    //     else{
-    //       return <h1>F</h1>
-    //     }
+  })()}
 
-    //   })()}
 
-    // </div>
+  <Hero/>
+</div>
 
-    <div>
-      <ol>
-          {
-            city.map((item,i)=>{
+)
 
-              return <li key={i.toString()}>{item}</li>
 
-            })
-          }
-      </ol>
-    </div>
-  );
 };
 
 export default App;
+
+
+
