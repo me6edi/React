@@ -1,25 +1,18 @@
-import Hero from './component/Hero';
 const App = () => {
 
-// const itemObj ={
-//     name:"Mehedi Amin",
-//     age:"25",
-//     city:"Dhaka",
-// }
+    const PostFormData=(event)=>{
+        event.preventDefault();
 
+        // TOD
+        alert('Form submitted!')
+    }
 
-const BtnClick=()=>{
-    alert("Say Hello!");
-}
-
-
-let item =()=> {
-    alert("Hey");
-}
 return(
 <div>
-{/* <Hero item={itemObj}/> */}
-<Hero ChildClick={BtnClick}/>
+    <form onSubmit={PostFormData}>
+        <input placeholder="name" />
+        <button type="submit">Submit</button>
+    </form>
 </div>
 
 );
