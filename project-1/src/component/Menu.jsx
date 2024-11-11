@@ -19,7 +19,7 @@ const Menu = () => {
             className={({ isActive }) =>
               isActive ? "active-item" : "pending-item"
             }
-            to="/product"
+            to="/product/10/Soap"
           >
             Product
           </NavLink>
@@ -29,7 +29,7 @@ const Menu = () => {
             className={(isActive) =>
               isActive ? "active-item" : "pending-item"
             }
-            to="/profile"
+            to="/profile/mehedi/amin"
           >
             Profile
           </NavLink>
