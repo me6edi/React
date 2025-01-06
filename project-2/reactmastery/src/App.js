@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import ReactBootstrap from './ReactBootstrap';
+// import ReactBootstrap from './ReactBootstrap';
+import Input from './Input';
 
 function App() {
   return (
-    <div>
-      <ReactBootstrap/>
-    </div>
+      <React.Fragment>
+      {/* <ReactBootstrap/> */}
+      <Input/>
+      </React.Fragment>
   );
 }
 
