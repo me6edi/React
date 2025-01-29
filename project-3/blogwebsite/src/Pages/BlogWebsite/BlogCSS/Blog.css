@@ -8,6 +8,7 @@
 .ShortTitle{
     font-size: 15px;
     color: #5d5d5d;
+    width: 90%;
 }
 .LongTitle{
     font-size: 20px;
@@ -18,4 +19,14 @@
     color: #5d5d5d;
     font-weight: 600;
     margin-bottom: -2px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url(../arrow-left-circle-fill.svg) !important;
+    margin-left: -250px;
+}
+
+.carousel-control-next-icon{
+    background-image: url(../arrow-right-circle-fill.svg) !important;
+    margin-right: -250px;
 }
