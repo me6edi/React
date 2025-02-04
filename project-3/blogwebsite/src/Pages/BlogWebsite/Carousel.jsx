@@ -20,16 +20,24 @@ constructor(props){
       PTitle1:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, nostrum totam, error veritatis nesciunt, officiis accusantium corporis rerum non repellendus aliquid fugiat quaerat cupiditate fugit corrupti dolore! Voluptatem a delectus vel totam non voluptas cum. Voluptates est itaque assumenda nihil delectus nulla sunt, voluptas nostrum. Corporis at minus est natus.",
       PTitle2:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, nostrum totam, error veritatis nesciunt, officiis accusantium corporis rerum non repellendus aliquid fugiat quaerat cupiditate fugit corrupti dolore! Voluptatem a delectus vel totam non voluptas cum. Voluptates est itaque assumenda nihil delectus nulla sunt, voluptas nostrum. Corporis at minus est natus.",
       PTitle3:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, nostrum totam, error veritatis nesciunt, officiis accusantium corporis rerum non repellendus aliquid fugiat quaerat cupiditate fugit corrupti dolore! Voluptatem a delectus vel totam non voluptas cum. Voluptates est itaque assumenda nihil delectus nulla sunt, voluptas nostrum. Corporis at minus est natus."
+    },
+    Channel:{
+      cName:"Hablu Programmer",
+      cName2:"Career With Mehedi",
+      cName3:"Learn With Amin"
+    },
+    Date:{
+      Date1:"03/02/2025",
+      Date2:"04/05/2025",
+      Date3:"05/05/2025"
     }
   }
 }
 
-
   render() {
     return (
 
-
-      <div>
+<div>
 <div id="carouselExampleFade" class="carousel slide carousel-fade container mt-5" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -41,7 +49,7 @@ constructor(props){
           <p className='ShortTitle mt-5'>{this.state.ShortTitle.STitle1}</p>
           <h3 className='LongTitle'>{this.state.LongTitle.LTitle1}</h3>
           <p className='ShortTitle'>{this.state.ParaGraph.PTitle1}</p>
-          <p className='ChannelName'>Mehedi Amin</p>
+          <p className='ChannelName'>{this.state.Channel.cName}</p>
           <p className='ShortTitle'>27 Jan 2025</p>
         </div>
       </div>
@@ -56,7 +64,7 @@ constructor(props){
           <p className='ShortTitle mt-5'>{this.state.ShortTitle.STitle2}</p>
           <h3 className='LongTitle'>{this.state.LongTitle.LTitle2}</h3>
           <p className='ShortTitle'>{this.state.ParaGraph.PTitle2}</p>
-          <p className='ChannelName'>Mehedi Amin</p>
+          <p className='ChannelName'>{this.state.Channel.cName2}</p>
           <p className='ShortTitle'>27 Jan 2025</p>
         </div>
       </div>
@@ -71,7 +79,7 @@ constructor(props){
           <p className='ShortTitle mt-5'>{this.state.ShortTitle.STitle3}</p>
           <h3 className='LongTitle'>{this.state.LongTitle.LTitle3}</h3>
           <p className='ShortTitle'>{this.state.ParaGraph.PTitle3}</p>
-          <p className='ChannelName'>Mehedi Amin</p>
+          <p className='ChannelName'>{this.state.Channel.cName3}</p>
           <p className='ShortTitle'>27 Jan 2025</p>
         </div>
       </div>
@@ -85,6 +93,7 @@ constructor(props){
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+  <h3 className='mt-5'>Recent post</h3>
 </div>
 </div>
     )
