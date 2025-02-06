@@ -30,3 +30,14 @@
     background-image: url(../arrow-right-circle-fill.svg) !important;
     margin-right: -250px;
 }
+
+.active{
+    color: rgb(117, 239, 255) !important;
+}
+
+.nav-item a{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    color: black;
+    text-decoration: none !important;
+}

@@ -3,7 +3,6 @@ import "./BlogCSS/Card.css"
 function Card(props) {
   return (
     <div className="container mt-5">
-
     <div className="card">
     <img src={props.img} className="card-img-top" alt="..."/>
     <div className="card-body">
