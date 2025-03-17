@@ -4,6 +4,9 @@ import Form from './Form';
 import MyChild from './Component/MyChild';
 import AppHome from './Component/AppHome';
 import UseEffect from './Component/UseEffect';
+import FetchDate from './Component/FetchDate';
+import ShowImg from './Component/ShowImg';
+import ShowCustomData from './Component/showCustomData';
 const App =() => {
   const Parentdata = "I Am Your Father";
   const DataPassing = (para)=>{
@@ -14,7 +17,10 @@ const App =() => {
       {/* <Form/> */}
       {/* <MyChild Title={Parentdata} onMathod={DataPassing}/> */}
       {/* <AppHome/> */}
-      <UseEffect/>
+      {/* <UseEffect/> */}
+      {/* <FetchDate/> */}
+      {/* <ShowImg/> */}
+      <ShowCustomData/>
     </div>
   );
 }
