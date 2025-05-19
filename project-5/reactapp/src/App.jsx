@@ -1,18 +1,28 @@
+import { useState } from 'react';
 import './App.css'
-import Product from './components/Products/Products'
 
 function App() {
-  const products = [
-    { name: 'Nokia', price: 1200 },
-    { name: 'Sumsung', price: 1300 },
-    { name: 'Robin', price: 1500 },
-  ]
+
+      const [price, setPrice] = useState(20);
+      const increaseHandle = () => {
+         const newPrice = price + 1;
+         setPrice(newPrice);
+      }
+
+      const decreaseHandle = () => {
+        const newPrice = price - 1;
+        setPrice(newPrice);
+     }
+
 
   return (
     <div>
-      {products.map((product, index) => (
-        <Product key={index} product={product} />
-      ))}
+          <h1> Price: {price}</h1>
+          <button onClick={increaseHandle}> Increase </button> &nbsp; &nbsp; &nbsp;
+          <button onClick={decreaseHandle}> Decrease </button>
+          <h2> Price: {price} </h2>
+          <p> Price: {price} </p>
+          <h4> Price: {price} </h4>
     </div>
   )
 }
