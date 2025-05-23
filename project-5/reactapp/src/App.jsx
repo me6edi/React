@@ -1,28 +1,23 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css'
 
 function App() {
+  const [count, SetCount] = useState(0);
+  const [name, setName] = useState('Programming Shikhbo');
 
-      const [price, setPrice] = useState(20);
-      const increaseHandle = () => {
-         const newPrice = price + 1;
-         setPrice(newPrice);
-      }
-
-      const decreaseHandle = () => {
-        const newPrice = price - 1;
-        setPrice(newPrice);
-     }
+    useEffect(() => {
+      console.log('When loaded')
+    }, [])
 
 
+  const updateCounter = () =>{
+      const newName = name + 'Coding';
+      setName(newName)
+  }
   return (
-    <div>
-          <h1> Price: {price}</h1>
-          <button onClick={increaseHandle}> Increase </button> &nbsp; &nbsp; &nbsp;
-          <button onClick={decreaseHandle}> Decrease </button>
-          <h2> Price: {price} </h2>
-          <p> Price: {price} </p>
-          <h4> Price: {price} </h4>
+    <div> 
+          <h1>Steps: {count}</h1>
+          <button onClick={updateCounter}>Steps</button>
     </div>
   )
 }
