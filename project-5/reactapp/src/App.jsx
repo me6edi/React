@@ -1,23 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 import './App.css'
+import Singleuserdata from './components/Singleuserdata/Singleuserdata'
 
 function App() {
-  const [count, SetCount] = useState(0);
-  const [name, setName] = useState('Programming Shikhbo');
 
-    useEffect(() => {
-      console.log('When loaded')
-    }, [])
+  const [allData, setAllData] = useState([]);
 
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(data => setAllData(data))
+  }, [])
 
-  const updateCounter = () =>{
-      const newName = name + 'Coding';
-      setName(newName)
-  }
   return (
-    <div> 
-          <h1>Steps: {count}</h1>
-          <button onClick={updateCounter}>Steps</button>
+    <div className='grid grid-cols-3'> 
+          {
+             allData.map(singleData => <Singleuserdata  key = {singleData.id} singleData={singleData}></Singleuserdata>)
+          }
     </div>
   )
 }
