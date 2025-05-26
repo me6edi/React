@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Aisha Khan",
+    "age": 25,
+    "profession": "Web Developer",
+    "email": "aisha.khan@example.com",
+    "phone": "+92-300-1111111",
+    "img": "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Rahul Mehta",
+    "age": 30,
+    "profession": "Graphic Designer",
+    "email": "rahul.mehta@example.com",
+    "phone": "+91-90000-22222",
+    "img": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Fatima Noor",
+    "age": 22,
+    "profession": "Content Writer",
+    "email": "fatima.noor@example.com",
+    "phone": "+92-333-1234567",
+    "img": "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ahmed Raza",
+    "age": 28,
+    "profession": "Software Engineer",
+    "email": "ahmed.raza@example.com",
+    "phone": "+92-301-9876543",
+    "img": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Zara Sheikh",
+    "age": 27,
+    "profession": "UI/UX Designer",
+    "email": "zara.sheikh@example.com",
+    "phone": "+92-345-4567890",
+    "img": "https://randomuser.me/api/portraits/women/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Imran Ali",
+    "age": 32,
+    "profession": "Mobile App Developer",
+    "email": "imran.ali@example.com",
+    "phone": "+92-300-5551234",
+    "img": "https://randomuser.me/api/portraits/men/6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Nida Hassan",
+    "age": 26,
+    "profession": "Digital Marketer",
+    "email": "nida.hassan@example.com",
+    "phone": "+92-341-1122334",
+    "img": "https://randomuser.me/api/portraits/women/7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Bilal Qureshi",
+    "age": 35,
+    "profession": "Data Analyst",
+    "email": "bilal.qureshi@example.com",
+    "phone": "+92-333-4455667",
+    "img": "https://randomuser.me/api/portraits/men/8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Hina Malik",
+    "age": 24,
+    "profession": "SEO Specialist",
+    "email": "hina.malik@example.com",
+    "phone": "+92-312-7788990",
+    "img": "https://randomuser.me/api/portraits/women/9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Usman Tariq",
+    "age": 29,
+    "profession": "DevOps Engineer",
+    "email": "usman.tariq@example.com",
+    "phone": "+92-323-6677889",
+    "img": "https://randomuser.me/api/portraits/men/10.jpg"
+  }
+]
