@@ -1,27 +1,27 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import SingleFakeData from './components/SingleFakeData/SingleFakeData';
+import { useState } from 'react';
+import './App.css';
+import Placement from './components/Placement/Placement';
+import Products from './components/Products/Products';
+import SingleCartData from './components/SingleCartData.jsx/SingleCartData';
+
+
 
 function App() {
-  const [fakeData,setFakeData] = useState([]);
-  console.log(fakeData);
+    const [cart, setCart] = useState([]);
 
-
-  useEffect(() => {
-    fetch('fakeData.json')
-    .then(res => res.json())
-    .then(data => setFakeData(data))
-  }, [])
-
+    const addToCartData = (Product) => {
+      const newCart = [...cart, Product];
+      setCart(newCart);
+    }
+      
 
   return (
-    <div className='flex items-center justify-center grid grid-cols-3'>
-      {/* <h1 className='text-3xl'>data length: {fakeData.length}</h1>  */}
-      {
-        fakeData.map(singleData => <SingleFakeData key = {singleData.id} singleData = {singleData}></SingleFakeData>)
-      }
+    <div className='flex gap-x-6'>
+        <Products addToCartData = {addToCartData}/>
+        <Placement cart = {cart}/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+ 
