@@ -1,11 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./components/Navber/Navbar";
+import './App.css';
+import Navbar from "./components/Navber/Navbar"; 
+import Footer from "./components/Footer/Footer";
 
-export default function App() {
+function App() {
   return (
-    <div className="card" style={{ textAlign: 'center' }}>
-        <Navbar/>
-        <Outlet></Outlet>
+    <div>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
-  )
+  );
 }
+
+export default App;
