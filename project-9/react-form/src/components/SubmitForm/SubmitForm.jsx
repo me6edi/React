@@ -2,44 +2,41 @@ import React, { useState } from 'react'
 
 function SubmitForm() {
 
-    const [text, setText] = useState('Hello');
-    const [email, setEmail] = useState('hello@gmail.com')
-    console.log(text);
-    console.log(email);
+const [name, setName] = useState('')
+const [email, setEmail] = useState('')
+const [pass, setPass] = useState('')
+const [error, setError] = useState('')
 
 
-    const submitForm = (e) => {
-            e.preventDefault();
-            console.log(e.target.text.value);
-            console.log(e.target.email.value);
-            console.log(e.target.password.value);
+const handleSubmitForm = (e) =>{
+    e.preventDefault();
+
+    if(pass.length < 8){
+        setError('Password must be 8 characters');
+    }
+    else{
+        setError('');
+        console.log(name);
+        console.log(email);
+        console.log(pass);
     }
 
-
-const nameText = (e) => {
-        setText(e.target.value)
 }
 
 
-const emailInput= (e) => {
-        setEmail(e.target.value)
-}
-
-const passwordInput= (e) => {
-        setPass(e.target.value);
-}
 
   return (
     <div>
-        <form onSubmit={submitForm}>
-        <input onChange={nameText} type="text" name="text" /><br/>
-        <input onChange={emailInput} type="email" name="email" /><br/>
-        <input onChange={passwordInput} type="password" name="password" /><br/>
-
+        <form onSubmit={handleSubmitForm}>
+        <input onChange={(e) => {setName (e.target.value)}} type="text" name="text" /><br/>
+        <input onChange={(e) => {setEmail (e.target.value)}} type="email" name="email" /><br/>
+        <input onChange={(e) => {setPass (e.target.value)}} type="password" name="password" /><br/>
+         
+        <small>{error}</small><br />
         <input type="submit" value="Submit" />
         </form>
     </div>
   )
 }
-
+ 
 export default SubmitForm
